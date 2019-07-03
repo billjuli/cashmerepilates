@@ -1,13 +1,74 @@
-<?php 
-$title = "ReAlign Pilates Westmorland";
-require_once("header.php");
-?>
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		<?php echo $title;?>
+	</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+	<script>var __adobewebfontsappname__ = "dreamweaver"</script>
+	<script async src="https://use.edgefonts.net/actor:n4:default;alfa-slab-one:n4:default.js" type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
 
 <body style="padding-top: 70px">
 
-<?php 
-require_once("navbar.php");
-?>   
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">| ReAlign Pilates |</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="topFixedNavbar1">
+			<ul class="nav navbar-nav navlist">
+				<li class="navlistitem<?php getActive('index.html')?>">
+					<a href="#">Home</a>
+				</li>
+				<li class="navlistitem<?php getActive('about.html')?>">
+					<a href="about.html">About Pilates</a>
+				</li>
+				<li class="navlistitem<?php getActive('prices.html')?>">
+					<a href="prices.html">Prices &amp; Schedule</a>
+				</li>
+				<li class="navlistitem<?php getActive('aboutme.html')?>">
+					<a href="aboutme.html">About Me</a>
+				</li>
+				<li class="navlistitem<?php getActive('contact.html')?>">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
+
+<?php
+
+function getActive ($page){
+    if(basename($_SERVER["SCRIPT_FILENAME"])==$page) {
+        echo " active";
+    }
+}
+
+?>
 
 
 <header><img src="images/REPS_logosm.jpg"  alt="REPS - Registered exercise professional" height="90" /></header>
@@ -17,7 +78,7 @@ require_once("navbar.php");
 <section class="sectionRight">
   <h2>Feel long, strong, &amp; connected</h2>
  <p>Re:Align Pilates is a boutique Pilates studio in Westmorland. I teach small affordable Pilates mat classes of up to 6 people &amp; Reformer &amp; other equipment at my private studio. Such small classes allow for personal attention and I can adapt exercises to suit individual needs taking into consideration injuries, pain, or special goals of each client. </p>
- <p><p>All Pilates exercises can be modified making a workout safe &amp; challenging for a person at any level, age or stage.  
+ <p><p>All Pilates exercises can be modified making a workout safe &amp; challenging for a person at any level, age or stage.
 Pilates works for a wide range of people - all ages (teens to seniors), athletes, pregnant &amp; postnatal women, people with limitations &amp; injures.  It helps you do better at whatever you you want to do whether it is gardening or cross training for an event. While many forms of exercise create an imbalanced body - tightening of certain muscles while overstretching others - Pilates aims to create a balanced body and is designed to cater for the needs of the individual.</p>
 Whether you want to improve your flexibility, accelerate recovery after an injury, or simply make a positive lifestyle change, ReAlign Pilates Westmorland Cashmere has something to offer you.
  </p><p>I have been helping people since 2010 to improve their movement and posture. I would like to do the same for you.</p>
